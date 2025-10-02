@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-neutral-background: #fef1d3;
+  --color-contrast-background: #cb0e14;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Blackcrow';
+  src: url('/fonts/Blackcrow-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wix Madefor Display';
+  src: url('/fonts/WixMadeforDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Wix madefor Display', sans-serif;
+  color: #212529;
+}
