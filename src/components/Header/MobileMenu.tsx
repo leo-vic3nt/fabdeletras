@@ -1,20 +1,22 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 import MobileMenuToggue from './MobileMenuToggle';
-import Socials from './Socials';
+import Socials from '../Socials';
+import Logo from '../Logo';
 
 function MobileMenu() {
   const [active, setActive] = useState(false);
 
   return (
     <>
-      <div className={`flex justify-center lg:hidden px-4 py-2 ${active ? 'min-h-dvh' : 'min-h-auto'}`}>
-        <MobileMenuToggue toggleMenu={setActive} />
+      <div className={`flex justify-center lg:hidden   ${active ? 'min-h-dvh' : 'min-h-auto'}`}>
+        <MobileMenuToggue toggleMenu={setActive} isActive={active} />
         <div className="flex flex-col items-center gap-20">
-          <a href="/">
-            <img src="/logos/logo-mobile.png" alt="logo" className="w-14" />
-          </a>
+          <Link to="/">
+            <Logo />
+          </Link>
 
-          <nav className={`${active ? 'block' : 'hidden'}`}>
+          <nav className={`${active ? 'block' : 'hidden'} font-blackcrow font-thin`}>
             <ul className="flex flex-col items-center gap-5 text-white">
               <li>
                 <a href="/">Início</a>
@@ -33,9 +35,8 @@ function MobileMenu() {
               </li>
             </ul>
           </nav>
-
           <div className={`${active ? 'block' : 'hidden'}`}>
-            <Socials />
+            <Socials iconType="flat" />
           </div>
         </div>
       </div>

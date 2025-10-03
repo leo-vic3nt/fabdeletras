@@ -1,7 +1,12 @@
-import Header from './components/Header/Header';
+import { Outlet } from 'react-router';
+import BaseLayout from './BaseLayout';
 
 function App() {
-  return <Header />;
+  return (
+    <BaseLayout>
+      <Outlet />
+    </BaseLayout>
+  );
 }
 
 export default App;

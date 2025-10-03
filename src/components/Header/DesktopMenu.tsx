@@ -1,14 +1,17 @@
-import Socials from './Socials';
+import Logo from '../Logo';
+import Socials from '../Socials';
+import { Link } from 'react-router';
 
 function DesktopMenu() {
   return (
-    <div className="hidden lg:block container mx-auto py-4 px-4">
+    <div className="hidden lg:block container mx-auto ">
       <div id="desktop-menu" className="flex items-center justify-between">
-        <a href="/">
-          <img src="/logos/logo-desktop.png" alt="logo" className="w-[160px]" />
-        </a>
+        <Link to="/">
+          <Logo />
+        </Link>
+
         <nav>
-          <ul className="flex justify-between gap-8 text-white">
+          <ul className="flex justify-between gap-8 text-white  font-blackcrow font-thin">
             <li>
               <a href="/">Início</a>
             </li>
@@ -26,7 +29,7 @@ function DesktopMenu() {
             </li>
           </ul>
         </nav>
-        <Socials />
+        <Socials iconType="flat" />
       </div>
     </div>
   );
