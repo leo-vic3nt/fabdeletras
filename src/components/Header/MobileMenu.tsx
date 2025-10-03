@@ -16,7 +16,7 @@ function MobileMenu() {
             <Logo />
           </Link>
 
-          <nav className={`${active ? 'block' : 'hidden'} font-blackcrow font-thin`}>
+          <nav className={`${active ? 'block' : 'hidden'} font-blackcrow font-thinç`}>
             <ul className="flex flex-col items-center gap-5 text-white">
               <li>
                 <a href="/">Início</a>
