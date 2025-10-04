@@ -1,5 +1,7 @@
+import HeroCarousel from '../HeroCarousel';
+
 function Home() {
-  return <p>Placeholder Conteneeet</p>;
+  return <HeroCarousel />;
 }
 
 export default Home;
