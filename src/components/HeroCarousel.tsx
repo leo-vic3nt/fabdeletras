@@ -47,7 +47,7 @@ function HeroCarousel() {
           className="w-full h-[915px] lg:h-[769px] bg-[url(src/assets/banners/banner-hero-mobile-03.png)] lg:bg-[url(src/assets/banners/banner-hero-03-min.png)] 
           bg-no-repeat bg-cover bg-center flex relative"
         >
-          <div className="lg:pt-20 pt-10 flex flex-col gap-5 absolute left-0 right-0 lg:right-2/3 lg:top-1/5 2xl:right-1/2 2xl:top-1/4 sm:w-[clamp(200px,80%,500px)] 2xl:w-[clamp(200px,80%,500px)] lg:w-[400px] mx-auto">
+          <div className="lg:pt-20 pt-10 flex flex-col gap-5 absolute left-0 right-0 lg:right-2/3 lg:top-1/5 2xl:right-1/2 2xl:top-1/4  w-[clamp(200px,80%,500px)] 2xl:w-[clamp(200px,80%,500px)] lg:w-[400px] mx-auto">
             <h1 className="font-blackcrow text-white 2xl:text-4xl text-2xl font-bold">
               <span className="font-thin">
                 Soluções <span className="font-bold">personalizadas</span> em comunicação visual!
