@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import WhatsAppWidget from './components/WhatsappWidget';
 
 interface Props {
   children: ReactNode;
@@ -14,6 +15,8 @@ function BaseLayout({ children }: Props) {
       <main className="grid">{children}</main>
 
       <Footer />
+
+      <WhatsAppWidget />
     </div>
   );
 }
