@@ -21,19 +21,19 @@ function MobileMenu({ isMobileMenuActive, setMobileMenuActive }: Props) {
           <nav className={`${isMobileMenuActive ? 'block' : 'hidden'} font-blackcrow font-thin`}>
             <ul className="flex flex-col items-center gap-5 text-white">
               <li>
-                <a href="/">Início</a>
+                <Link to="/">Início</Link>
               </li>
               <li>
-                <a href="/sobre-nos">Sobre Nós</a>
+                <Link to="/sobre-nos">Sobre Nós</Link>
               </li>
               <li>
-                <a href="/nossos-servicos">Nossos Serviços</a>
+                <Link to="/nossos-servicos">Nossos Serviços</Link>
               </li>
               <li>
-                <a href="/nossos-clientes">Nossos Clientes</a>
+                <Link to="/nossos-clientes">Nossos Clientes</Link>
               </li>
               <li>
-                <a href="/atendimento">Atendimento</a>
+                <Link to="/atendimento">Atendimento</Link>
               </li>
             </ul>
           </nav>
