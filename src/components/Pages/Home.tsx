@@ -1,6 +1,7 @@
 import HeroCarousel from '../HeroCarousel';
 import AboutUsBanner from '../AboutUsBanner';
 import ClientsCarousel from '../ClientsCarousel';
+import LogosCarousel from '../LogosCarousel';
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <HeroCarousel />
       <AboutUsBanner />
       <ClientsCarousel />
+      <LogosCarousel />
     </div>
   );
 }
