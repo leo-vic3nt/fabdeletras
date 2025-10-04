@@ -6,6 +6,7 @@
 @theme {
   --color-neutral-background: #fef1d3;
   --color-contrast-background: #cb0e14;
+  --color-black-text: #212529;
   --font-blackcrow: "Blackcrow", sans-serif;
 }
 
@@ -211,6 +212,7 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
