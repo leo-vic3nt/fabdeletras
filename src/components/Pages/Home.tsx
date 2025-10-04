@@ -2,6 +2,7 @@ import HeroCarousel from '../HeroCarousel';
 import AboutUsBanner from '../AboutUsBanner';
 import ClientsCarousel from '../ClientsCarousel';
 import LogosCarousel from '../LogosCarousel';
+import MessageSender from '../MessageSender';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <AboutUsBanner />
       <ClientsCarousel />
       <LogosCarousel />
+      <MessageSender />
     </div>
   );
 }
