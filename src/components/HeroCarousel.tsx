@@ -1,11 +1,21 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 function HeroCarousel() {
   return (
-    <Carousel >
+    <Carousel
+      opts={{
+        loop: true,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 4000,
+        }),
+      ]}
+    >
       <CarouselContent>
         <CarouselItem>
-          <div>
+          <div className="flex">
             <img src="src/assets/banners/banner-hero-01-min.png" alt="ay" />
           </div>
         </CarouselItem>

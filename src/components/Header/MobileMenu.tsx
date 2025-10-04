@@ -11,7 +11,7 @@ interface Props {
 function MobileMenu({ isMobileMenuActive, setMobileMenuActive }: Props) {
   return (
     <>
-      <div className={`flex justify-center lg:hidden   ${isMobileMenuActive ? 'min-h-dvh' : 'min-h-auto'}`}>
+      <div className={`flex justify-center lg:hidden  ${isMobileMenuActive ? 'min-h-dvh' : 'min-h-auto'}`}>
         <MobileMenuToggue toggleMenu={setMobileMenuActive} isActive={isMobileMenuActive} />
         <div className="flex flex-col items-center gap-20">
           <Link to="/">
